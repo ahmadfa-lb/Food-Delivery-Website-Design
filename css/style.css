@@ -249,3 +249,17 @@ body {
   border-radius: 20px;
   background-color: #ff511c;
 }
+
+
+/* Start Footer Section */
+.footer {
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer b {
+  color: #ff511c;
+  font-weight: bold;
+}
+/* End Footer Section */
