@@ -9,7 +9,10 @@
 body {
   margin: 0 100px;
   background-color: #ffeae0;
+  font-family: sans-serif;
 }
+
+/* Start Section Menu */
 
 /* Start Menu */
 .nav {
@@ -22,7 +25,6 @@ body {
 
 .nav .logo {
   font-weight: 600;
-  font-family: sans-serif;
   color: #000000;
 }
 
@@ -43,7 +45,6 @@ body {
   text-decoration: none;
   color: #000000;
   font-weight: 500;
-  font-family: sans-serif;
   font-size: 17px;
 }
 
@@ -82,3 +83,61 @@ body {
   border: none;
   border-radius: 5px;
 }
+
+/* End Section Menu */
+
+/* Start Section Grid */
+.content {
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.content .content-left {
+  display: block;
+  width: 100%;
+}
+
+.content .content-left .info {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .content-left .info h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.content .content-left .info p {
+  font-size: 23px;
+  line-height: 2pc;
+  margin-bottom: 30px;
+}
+
+.content .content-left button {
+  padding: 10px 23px;
+  background-color: #ff511c;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.content .content-right {
+  display: block;
+  width: 100%;
+}
+
+.content .content-right img {
+  width: 400px;
+  height: auto;
+  position: relative;
+  animation: rotate 10s linear infinite;
+}
+
+/* End Section Grid */
