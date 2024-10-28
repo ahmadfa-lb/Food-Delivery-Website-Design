@@ -137,7 +137,37 @@ body {
   width: 400px;
   height: auto;
   position: relative;
+  user-select: none;
   animation: rotate 10s linear infinite;
+  border-radius: 55%;
+}
+
+/* Animation */
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 /* End Section Grid */
+
+/* Start category section */
+.category{
+  width: 100%;
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: center;
+
+}
+
+
+.category .list-items{
+  width: 90%;
+  position: relative;
+  
+}
+/* End category section */
