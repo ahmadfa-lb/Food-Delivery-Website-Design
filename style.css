@@ -61,3 +61,24 @@ body {
 }
 
 /* End Active */
+
+/* Sign in&up buttons */
+
+.nav .signin {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+}
+
+.nav .signup {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #ff511c;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
