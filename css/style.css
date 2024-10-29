@@ -7,11 +7,14 @@
 }
 
 body {
-  margin: 0 100px;
+  /* margin: 0 100px; */
   background-color: #ffeae0;
   font-family: sans-serif;
 }
 
+.all {
+  padding: 0 100px;
+}
 /* Start Section Menu */
 
 /* Start Menu */
@@ -21,6 +24,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+}
+
+.nav i {
+  display: none;
 }
 
 .nav .logo {
@@ -94,7 +101,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .content .content-left {
@@ -145,31 +152,28 @@ body {
 /* Animation */
 
 @keyframes rotate {
-    0%{
-        transform: rotate(0deg)
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* End Section Grid */
 
 /* Start category section */
-.category{
+.category {
   width: 100%;
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
-
 }
 
-
-.category .list-items{
+.category .list-items {
   width: 90%;
   position: relative;
   margin-top: 50px;
-
 }
 
 .category .list-items h3 {
@@ -178,12 +182,12 @@ body {
   margin-bottom: 70px;
 }
 
-.category .list-items .card-list{
+.category .list-items .card-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.category .card-list .card{
+.category .card-list .card {
   width: 200px;
   height: auto;
   display: block;
@@ -194,7 +198,7 @@ body {
   outline: 2px solid #faad96;
 }
 
-.category .card-list .card img{
+.category .card-list .card img {
   width: 100px;
   height: 100px;
   bottom: 150px;
@@ -207,49 +211,44 @@ body {
   border-radius: 50%;
 }
 
-.category .card-list .card .food-title{
+.category .card-list .card .food-title {
   padding: 40px 0 10px;
-
 }
 
-.category .card-list .card .food-title h1{
+.category .card-list .card .food-title h1 {
   text-align: center;
   font-weight: bold;
   font-size: 16px;
-
 }
 
-.category .card-list .card .desc-food{
+.category .card-list .card .desc-food {
   font-size: 13px;
   text-align: center;
   font-weight: 500;
   margin-bottom: 20px;
-
 }
 
-.category .card-list .card .price{
+.category .card-list .card .price {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.category .card-list .price .plus-icon{
+.category .card-list .price .plus-icon {
   color: #ff511c;
   font-size: 20px;
   cursor: pointer;
 }
 /* End category section */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: #ff511c;
 }
-
 
 /* Start Footer Section */
 .footer {
@@ -263,3 +262,109 @@ body {
   font-weight: bold;
 }
 /* End Footer Section */
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  body {
+    /* margin: 0 100px; */
+  }
+
+  .all {
+    padding: 0 20px;
+  }
+
+  .menu {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .nav {
+    padding: 15px 0;
+  }
+
+  .nav i {
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav .logo b {
+    display: block;
+    padding-left: 10px;
+  }
+
+  .nav .signin,
+  .nav .signup {
+    padding: 5px 10px;
+    font-weight: 400;
+  }
+
+  .content {
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .content .content-right {
+    display: none;
+  }
+
+  .content .content-left .info h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    /* padding: 0 30px; */
+  }
+
+  .content .content-left .info p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    /* padding: 0 30px; */
+  }
+
+  .content .content-left button {
+    padding: 10px 10px;
+    /* margin: 0 30px; */
+  }
+
+  .category {
+    margin-bottom: 0px;
+    align-items: center;
+  }
+
+  .category .list-items h3 {
+    font-size: 25px;
+    margin-bottom: 70px;
+    width: max-content;
+  }
+
+  .category .list-items {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .category .list-items .card-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .category .card-list .card {
+    margin-bottom: 60px;
+  }
+
+  .footer {
+    background-color: #ffffff;
+  }
+}
